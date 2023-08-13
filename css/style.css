@@ -227,7 +227,8 @@ textarea {
 }
 
 .sec-pad {
-  padding: 12rem 0;
+  padding: 14rem 0;
+
 }
 
 @media only screen and (max-width: 56.25em) {
@@ -366,7 +367,7 @@ textarea {
     grid-gap: 8rem;
   }
 }
-
+ 
 .about__content-title {
   font-weight: 700;
   font-size: 2.8rem;
@@ -393,6 +394,10 @@ textarea {
 }
 
 .about__content-details-para:last-child {
+  margin-bottom: 4rem;
+}
+
+.projects__content {
   margin-bottom: 4rem;
 }
 
