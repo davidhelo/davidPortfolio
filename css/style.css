@@ -199,6 +199,12 @@ textarea {
   transition: transform .3s;
 }
 
+code {
+  border: 2px solid lightgray;
+  border-radius: 6px;
+  padding: 1.25rem;
+}
+
 .btn:hover {
   transform: translateY(-3px);
 }
