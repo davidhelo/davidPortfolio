@@ -67,6 +67,11 @@ li {
   list-style: none;
 }
 
+.certificates_li {
+  list-style:disc;
+  margin-left: 2rem;
+}
+
 input:focus,
 button:focus,
 a:focus,
@@ -194,7 +199,8 @@ textarea {
   letter-spacing: 2px;
   display: inline-block;
   font-weight: 700;
-  border-radius: 5px;
+  border-radius: 7px;
+  border: 1px solid darkblue;
   box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.15);
   transition: transform .3s;
 }
@@ -207,6 +213,7 @@ code {
 
 .btn:hover {
   transform: translateY(-3px);
+  border: 0;
 }
 
 .btn--bg {
@@ -244,8 +251,8 @@ code {
 }
 
 .text-primary {
-  color: #fff;
-  font-size: 2.2rem;
+  color: #EEEEEE;
+  font-size: 2.5rem;
   text-align: center;
   width: 100%;
   line-height: 1.6;
@@ -388,10 +395,10 @@ code {
 
 .about__content-details-para {
   font-size: 1.8rem;
-  color: grey;
+  color: #5b5b5b;
   max-width: 60rem;
   line-height: 1.7;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .about__content-details-para--hl {
@@ -401,6 +408,14 @@ code {
 
 .about__content-details-para:last-child {
   margin-bottom: 4rem;
+}
+
+.about__certificates {
+  font-size: 1.9rem;
+  color: #5b5b5b;
+  max-width: 60rem;
+  line-height: 1.7;
+  margin-bottom: 1.5rem;
 }
 
 .projects__content {
@@ -803,18 +818,37 @@ code {
 }
 
 .header__link {
-  padding: 2.2rem 3rem;
+  padding: 0.75rem 0;
+  margin: 2.25rem 3rem;
   display: inline-block;
   font-size: 1.6rem;
   color: #333;
   text-transform: uppercase;
   letter-spacing: 1px;
   font-weight: 700;
-  transition: color .3s;
+  position: relative;
 }
 
 .header__link:hover {
   color: #0062b9;
+}
+
+.header__link:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: #0062b9;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.header__link:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 @media only screen and (max-width: 56.25em) {
@@ -1033,4 +1067,8 @@ code {
     opacity: 0;
     top: 27px;
   }
+}
+
+#portfolio {
+  font-size: 4rem;
 }
