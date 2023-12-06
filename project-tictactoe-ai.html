@@ -4,7 +4,7 @@
       <meta charset="UTF-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-      <title>Case Study: user authentication App</title>
+      <title>Case Study: AI tic-tac-toe game</title>
       <meta name="description" content="Case study page of Project" />
   
       <link rel="stylesheet" href="css/style.css" />
@@ -84,15 +84,15 @@
       </header>
       <section class="project-cs-hero">
         <div class="project-cs-hero__content">
-          <h1 class="heading-primary">To Do List App</h1>
+          <h1 class="heading-primary">AI tic-tac-toe game</h1>
           <div class="project-cs-hero__info">
             <p class="text-primary">
-              This is the case study fo To Do App. It is an app that allows user to add, 
-              mark as done and delete tasks, it is build in React.
+              This project is a web application to play tic-tac-toe against the machine. 
+              <br>It implements Minimax algorithm in an API to calculate the optimal move.
             </p>
           </div>
           <div class="project-cs-hero__cta">
-            <a href="https://davidhelo.github.io/tasks_app/" class="btn btn--bg" target="_blank">Live Link</a>
+            <a href="https://tictactoe-ai-davidhelo.vercel.app/tictactoegame/" class="btn btn--bg" target="_blank">Live Link</a>
           </div>
         </div>
       </section>
@@ -101,7 +101,7 @@
           <div class="project-details__content">
             <div class="project-details__showcase-img-cont">
               <img
-                src="./assets/jpeg/project-todo-list-img.jpeg"
+                src="./assets/jpeg/project-tictactoe-ai-img.jpeg"
                 alt="Project Image"
                 class="project-details__showcase-img"
               />
@@ -110,39 +110,62 @@
               <div class="project-details__desc">
                 <h3 class="project-details__content-title">Project Overview</h3>
                 <p class="project-details__desc-para">
-                  This implements React states to Create, Read, Update 
-                  and Delete data (CRUD). 
-                  
+                  Minimax is a type of Adversarial Search algorithm used in AI for games.
                 </p>
                 <p class="project-details__desc-para">
-                  This project implements the principles of class components
-                  and State Managing in React to let the user to insert 
-                  and manipulate data in an interactive maner. 
+                  This app is an implementation in Python of the minimax algorithm.
+                  A correct implementation results in an unbeatable machine, you won't be able to win against it (optimal play in both sides always results in a tie).
+                  <br>This algorithm recursively searches all possible paths up to the last outcome 
+                  (winner or tie) and assign a score to each one that is compare to other paths scores to maximize the possibility to win.
+                </p>
+                <p class="project-details__desc-para">
+                  The web app's frontend was build using React JS and the backend using Django Framework.
+                  As the React App is pre-build, you'll find the 
+                  <a href="https://github.com/davidhelo/TictactoeAIWebApp"
+                      target="_blank"
+                      class="underlinedLink">
+                    source code for the React App</a>
+                    in a different repository.
+                </p>
+                <p class="project-details__desc-para">
+                  Find more information about Adversarial Search and 
+                  Minimax algorithms in this lecture from Harvard's course 
+                  <a href="https://cs50.harvard.edu/ai/2023/notes/0/#adversarial-search" 
+                    target="_blank" 
+                    class="underlinedLink">
+                    cs50AI
+                  </a>, 
+                  or more information from geeks for geeks 
+                  <a href="https://www.geeksforgeeks.org/minimax-algorithm-in-game-theory-set-1-introduction/"  
+                    target="_blank" 
+                    class="underlinedLink">here</a>.
                 </p>
               </div>
               <div class="project-details__tools-used">
                 <h3 class="project-details__content-title">Tools Used</h3>
                 <div class="skills">
-                  <div class="skills__skill">HTML</div>
-                  <div class="skills__skill">CSS</div>
+                  <div class="skills__skill">Python</div>
+                  <div class="skills__skill">Django</div>
                   <div class="skills__skill">JavaScript</div>
                   <div class="skills__skill">React</div>
                   <div class="skills__skill">GIT</div>
+                  <div class="skills__skill">HTML</div>
+                  <div class="skills__skill">CSS</div>
                 </div>
               </div>
               <div class="project-details__links">
                 <h3 class="project-details__content-title">See Live</h3>
                 <a
-                  href="https://davidhelo.github.io/tasks_app/"
+                  href="https://tictactoe-ai-davidhelo.vercel.app/tictactoegame/"
                   class="btn btn--med btn--theme project-details__links-btn"
                   target="_blank"
                   >Live Link</a
                 >
                 <a
-                  href="https://github.com/davidhelo/tasks_app/tree/main"
+                  href="https://github.com/davidhelo/tictactoeAI"
                   class="btn btn--med btn--theme-inv project-details__links-btn"
                   target="_blank"
-                  >Code Link</a
+                  >Source code</a
                 >
               </div>
             </div>
@@ -176,7 +199,7 @@
             <div class="main-footer__row main-footer__row-2">
               <h4 class="heading heading-sm text-lt">David Hernandez</h4>
               <p class="main-footer__short-desc">
-                Backend Web Developer
+                Backend Developer
               </p>
             </div>
           </div>

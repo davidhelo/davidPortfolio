@@ -213,7 +213,7 @@ code {
 
 .btn:hover {
   transform: translateY(-3px);
-  border: 0;
+  border: 1px solid lightblue;
 }
 
 .btn--bg {
