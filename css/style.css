@@ -239,6 +239,20 @@ code {
   padding: calc(1.5rem - 2px) calc(5rem - 2px);
 }
 
+.btn-projects {
+  margin: 0 1rem;
+  padding: 1.5rem;
+  width: 60%;
+  height: 100%;
+  text-align: center;
+}
+
+.btn-projects-container {
+  width: 100%;
+  display: flex;
+
+}
+
 .sec-pad {
   padding: 14rem 0;
 
@@ -484,8 +498,8 @@ code {
 }
 
 .projects__row-content-desc {
-  font-size: 1.8rem;
-  color: grey;
+  font-size: 1.9rem;
+  color: #5f5f5f;
   max-width: 60rem;
   line-height: 1.7;
   margin-bottom: 3rem;
